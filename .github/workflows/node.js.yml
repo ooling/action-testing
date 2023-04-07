@@ -1,6 +1,6 @@
 name: TestPrint
 on:
-  workflow_call:
+  reusable_workflow_job:
     inputs:
       username:
         description: 'A username passed from the caller workflow'
