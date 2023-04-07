@@ -27,5 +27,5 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: node index.js
+      run: node ../index.js
       #run: echo "Hello ${{ github.event.inputs.name }}"
