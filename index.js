@@ -1,10 +1,10 @@
 import { minHTML } from './minHTML.mjs';
-let fs = require('node:fs');
+import { readdirSync } from 'node:fs';
 
 console.log( minHTML );
 
 ( async () => {
   
-  fs.readdirSync('./').forEach( v => console.log(v) );
+  readdirSync('./').forEach( v => console.log(v) );
   
 })();
