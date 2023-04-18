@@ -7,4 +7,4 @@ let main = async () => {
   //|| fs.mkdirSync('./test');
 }
 
-await main();
+main();
