@@ -1,6 +1,7 @@
 //import { minHTML } from './minHTML.mjs';
 import { readdirSync } from 'node:fs';
 
+console.log( process.env.TEST );
 console.log( process.env );
 
 ( async () => {
