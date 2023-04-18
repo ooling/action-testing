@@ -1,7 +1,7 @@
 let fs = require('node:fs');
-const { minify } = require('./htmlminifier.umd.bundle.min');
+let { minHTML } = require('./minHTML');
 
-console.log( minify );
+console.log( minHTML );
 
 ( async () => {
   
