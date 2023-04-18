@@ -1,8 +1,10 @@
 let fs = require('node:fs');
 
 let main = async () => {
-  fs.existsSync('./test') || fs.mkdirSync('./test');
-  console.log('yo');
+  console.log(
+    fs.existsSync('./test') && 'test folder exist'
+  );
+  //|| fs.mkdirSync('./test');
 }
 
 await main();
