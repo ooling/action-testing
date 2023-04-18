@@ -1,5 +1,5 @@
+import { minHTML } from './minHTML.mjs';
 let fs = require('node:fs');
-let { minHTML } = require('./minHTML.mjs');
 
 console.log( minHTML );
 
