@@ -1,5 +1,5 @@
 let fs = require('node:fs');
-const { minify } = require('https://esm.sh/v116/html-minifier-terser@7.2.0/es2022/html-minifier-terser.mjs');
+const { minify } = require('https://unpkg.com/browse/html-minifier-terser@7.2.0/dist/htmlminifier.esm.bundle.js');
 
 console.log( minify );
 
