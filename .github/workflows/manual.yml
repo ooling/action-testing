@@ -10,5 +10,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Worker
       env:
-        SECRET_AUTH: ${{ secrets.SECRET_AUTH }}
+        XTESTX: ${{ secrets.SECRET_AUTH }}
       run: node index.mjs
