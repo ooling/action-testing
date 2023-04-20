@@ -1,7 +1,7 @@
 
 import { readdirSync, readFileSync } from 'node:fs';
 
-import { minHTML, fetchDevPosts } from '../ncc/dist/index.mjs';
+import { minHTML, fetchDevPosts } from './minHTML.mjs';
 
 
 let readFile = path => readFileSync('./src/'+ path, 'utf8');
