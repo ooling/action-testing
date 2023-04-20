@@ -1,7 +1,7 @@
 
 import { readdirSync, readFileSync } from 'node:fs';
 
-import { minHTML, fetchDevPosts } from './minHTML.mjs';
+import { minHTML, fetchDevPosts, octokitUpdateFile } from './lib.mjs';
 
 
 let readFile = path => readFileSync('./src/'+ path, 'utf8');
@@ -58,4 +58,4 @@ let build = async()=> await minHTML(
 
    }</body></html>`
 
-); export { build } ;
+); export { build, octokitUpdateFile } ;
