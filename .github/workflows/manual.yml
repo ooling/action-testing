@@ -12,7 +12,7 @@ jobs:
       run: |
         git config --local user.name "ooling"
         git config --local user.email "samooling@gmail.com"
-        git clone "https://github.com/SamXuLing.git" targetRepo
+        git clone "https://github.com/ooling/SamXuLing.git" targetRepo
     - name: Stage 2
       env:
         TEST: ${{ secrets.TESTINGSECRET }}
