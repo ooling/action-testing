@@ -12,3 +12,6 @@ jobs:
       run: node index.mjs
       env:
         TEST: ${{ secrets.TESTINGSECRET }}
+    - name: Git
+      run: |
+        git status
