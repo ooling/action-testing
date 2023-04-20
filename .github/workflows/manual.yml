@@ -8,17 +8,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    # - name: Git
-    #   run: |
-    #     git config --local user.name "ooling"
-    #     git config --local user.email "samooling@gmail.com"
-    #     git clone "https://github.com/SamXuLing.git" targetRepo
-    # - name: Run index.mjs
-    #   run: node index.mjs
-    #   env:
-    #     TEST: ${{ secrets.TESTINGSECRET }}
-    - name: Git
-      run: cd .git
+    - name: Stage 1
+      run: |
+        git config --local user.name "ooling"
+        git config --local user.email "samooling@gmail.com"
+        git clone "https://github.com/SamXuLing.git" targetRepo
+    - name: Stage 2
+      env:
+        TEST: ${{ secrets.TESTINGSECRET }}
+      run: node index.mjs
+    - name: Stage 3
+      run: |
+        ls
+        cd targetRepo
+        ls
       # run: |
       #   git add ./index.html
       #   git commit -m "Test Commit"
