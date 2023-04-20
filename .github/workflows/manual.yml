@@ -15,3 +15,5 @@ jobs:
     - name: Git
       run: |
         git status
+        git add ./index.html
+        git commit -m "Test Commit"
