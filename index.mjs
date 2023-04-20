@@ -6,7 +6,7 @@ await import('./htdocMinify.mjs').then( async html =>
 
       await html.build().then( result => {
 
-         console.log(/* './index.html', */ result); /*###   TODO   ###*/
+         fs.writeFileSync('./index.html', result);
          console.log('build success')
       })
    }  catch (err){ console.log(err) } } )
