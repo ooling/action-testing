@@ -1,0 +1,8 @@
+
+#about {
+   flex-direction: column;
+   padding-top: 3.8%;
+   font-size: 150%;
+}
+
+/* #about .br { display: flex } */
