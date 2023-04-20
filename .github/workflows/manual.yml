@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Run index.js
-      run: node index.js
+    - name: Run index.mjs
+      run: node index.mjs
       env:
         TEST: ${{ secrets.TESTINGSECRET }}
