@@ -10,9 +10,9 @@ jobs:
     - uses: actions/checkout@v3
     - name: Stage 1
       run: |
+        git clone "https://github.com/ooling/SamXuLing.git" targetRepo
         git config --local user.name "ooling"
         git config --local user.email "samooling@gmail.com"
-        git clone "https://github.com/ooling/SamXuLing.git" targetRepo
     - name: Stage 2
       env:
         TEST: ${{ secrets.TESTINGSECRET }}
