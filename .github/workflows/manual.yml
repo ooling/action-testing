@@ -8,14 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Run index.mjs
-      run: node index.mjs
-      env:
-        TEST: ${{ secrets.TESTINGSECRET }}
+    # - name: Git
+    #   run: |
+    #     git config --local user.name "ooling"
+    #     git config --local user.email "samooling@gmail.com"
+    #     git clone "https://github.com/SamXuLing.git" targetRepo
+    # - name: Run index.mjs
+    #   run: node index.mjs
+    #   env:
+    #     TEST: ${{ secrets.TESTINGSECRET }}
     - name: Git
-      run: ls .
+      run: cd .git
       # run: |
-      #   git status
       #   git add ./index.html
       #   git commit -m "Test Commit"
       #   git push
